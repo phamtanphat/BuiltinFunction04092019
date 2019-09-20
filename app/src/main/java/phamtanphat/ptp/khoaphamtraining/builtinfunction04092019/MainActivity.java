@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         // function insochan
         //function insole
         //function insochia3du1
-        insoChan();
+        inso(1 ,3);
     }
     // Thuong duoc tao trong class
     // 1 : Access modifier : Pham vi truy cap
@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
     // private : tao ra dau thi dung o do
     // 2 : Gia tri tra ve
     //3 : ten phuong thuc
+    private void inso(int sodu , int sobichia){
+        for (int i = 0 ; i<= 100 ; i++){
+            if (i % sobichia == sodu){
+                Log.d("BBB",i + "");
+            }
+        }
+    }
     private void insoChan(){
         for (int i = 0 ; i<= 100 ; i++){
             if (i % 2 == 0){
